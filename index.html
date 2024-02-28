@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>Minesweeper</header>
+    <div class="controls">
+       <div><button id="newgame_btn">new game</button></div> 
+       <div><select id="level">
+            <option>select difficulty</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="expert">Expert</option>
+            <option value="custom">custom</option>
+        </select>
+        </div>
+    </div>
+    <div class="customcontrols">
+        <div>rows: <input type="number" id="temprows"  min="1" style="width: 50px"></div>
+        <div>cols: <input type="number" id="tempcols"  min="1" style="width: 50px"></div> 
+        <div>mines: <input type="number" id="tempmines" min="1" step="1" style="width: 50px"></div>  
+        <div><button id="rendercustom_btn">render</button></div>  
+    </div>
+    <div class="container">
+        <div class="grid"></div>
+    </div>
+    <p></p>
+    <footer class="gameEnd"></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
