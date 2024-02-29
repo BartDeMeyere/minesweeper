@@ -141,6 +141,8 @@ function CreateGrid(){
                         $(".gameEnd").html("You lost the game!")
 
                         $("#newgame_btn").prop("disabled" , false)
+
+                        return
     
                      }
 
